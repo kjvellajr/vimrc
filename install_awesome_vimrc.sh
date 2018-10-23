@@ -1,6 +1,12 @@
 #!/bin/sh
 set -e
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+echo "Found location of sources at $DIR"
+
+ln -s $DIR ~/.vim_runtime
+
 cd ~/.vim_runtime
 
 echo 'set runtimepath+=~/.vim_runtime

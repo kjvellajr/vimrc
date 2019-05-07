@@ -14,7 +14,7 @@ Syntax highlighting, matching rules and mappings for [the original Markdown](htt
 
 ## Installation
 
-If you use [Vundle](https://github.com/gmarik/vundle), add the following line to your `~/.vimrc`:
+If you use [Vundle](https://github.com/gmarik/vundle), add the following lines to your `~/.vimrc`:
 
 ```vim
 Plugin 'godlygeek/tabular'
@@ -275,6 +275,14 @@ JSON syntax highlight requires [vim-json](https://github.com/elzr/vim-json).
 
 ```vim
 let g:vim_markdown_json_frontmatter = 1
+```
+
+#### Strikethrough
+
+Strikethrough uses two tildes. `~~Scratch this.~~`
+
+```vim
+let g:vim_markdown_strikethrough = 1
 ```
 
 ### Adjust new list item indent

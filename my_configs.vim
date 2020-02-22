@@ -19,6 +19,9 @@ endif
 nmap <leader>tb :below terminal ++rows=20<CR>
 nmap <leader>tr :rightb vertical terminal ++cols=75<CR>
 
+" use ctrl+v for visual block mode
+nnoremap <c-q> <c-v>
+
 " set title of vim to current working directory 
 set titlestring+=%{fnamemodify(getcwd(),':~')}
 
@@ -35,3 +38,8 @@ set list lcs=tab:>\
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 
+" do not conceal anything on json files
+let g:indentLine_fileTypeExclude = ['json']
+
+" do vertical diffs
+set diffopt+=vertical

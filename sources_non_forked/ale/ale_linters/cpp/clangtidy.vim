@@ -4,7 +4,7 @@
 
 call ale#Set('cpp_clangtidy_executable', 'clang-tidy')
 " Set this option to check the checks clang-tidy will apply.
-call ale#Set('cpp_clangtidy_checks', ['*'])
+call ale#Set('cpp_clangtidy_checks', [])
 " Set this option to manually set some options for clang-tidy.
 " This will disable compile_commands.json detection.
 call ale#Set('cpp_clangtidy_options', '')
@@ -29,8 +29,8 @@ endfunction
 call ale#linter#Define('cpp', {
 \   'name': 'clangtidy',
 \   'output_stream': 'stdout',
-\   'executable_callback': ale#VarFunc('cpp_clangtidy_executable'),
-\   'command_callback': 'ale_linters#cpp#clangtidy#GetCommand',
+\   'executable': {b -> ale#Var(b, 'cpp_clangtidy_executable')},
+\   'command': function('ale_linters#cpp#clangtidy#GetCommand'),
 \   'callback': 'ale#handlers#gcc#HandleGCCFormat',
 \   'lint_file': 1,
 \})

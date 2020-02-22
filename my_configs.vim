@@ -43,3 +43,4 @@ let g:indentLine_fileTypeExclude = ['json']
 
 " do vertical diffs
 set diffopt+=vertical
+

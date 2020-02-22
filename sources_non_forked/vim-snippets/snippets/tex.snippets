@@ -212,7 +212,7 @@ snippet under underline text
 snippet over overline text
 	\\overline{${1:${VISUAL:text}}} ${0}
 snippet emp emphasize text
-	\\emph{${1:${VISUAL:text}}} ${0}
+	\\emph{${1:${VISUAL:text}}}${0}
 snippet sc small caps text
 	\\textsc{${1:${VISUAL:text}}} ${0}
 #Choosing font
@@ -321,17 +321,17 @@ snippet \{ \{ \}
 	\\{ ${0} \\}
 #delimiter
 snippet lr left right
-	\\left${1} ${0} \\right$1
+	\\left${1} ${0:${VISUAL}} \\right$1
 snippet lr( left( right)
-	\\left( ${0} \\right)
+	\\left( ${0:${VISUAL}} \\right)
 snippet lr| left| right|
-	\\left| ${0} \\right|
+	\\left| ${0:${VISUAL}} \\right|
 snippet lr{ left\{ right\}
-	\\left\\{ ${0} \\right\\}
+	\\left\\{ ${0:${VISUAL}} \\right\\}
 snippet lr[ left[ right]
-	\\left[ ${0} \\right]
+	\\left[ ${0:${VISUAL}} \\right]
 snippet lra langle rangle
-	\\langle ${0} \\rangle
+	\\langle ${0:${VISUAL}} \\rangle
 # Code listings
 snippet lst
 	\\begin{listing}[language=${1:language}]

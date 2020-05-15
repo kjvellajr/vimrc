@@ -12,3 +12,5 @@ fi
 rm -rf sources_non_forked/
 
 python update_plugins.py
+
+rm -rf sources_non_forked/auto-pairs

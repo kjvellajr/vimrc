@@ -60,6 +60,7 @@ vim-python-pep8-indent https://github.com/Vimjas/vim-python-pep8-indent
 vim-go https://github.com/fatih/vim-go
 vim-ctrlspace https://github.com/vim-ctrlspace/vim-ctrlspace
 indentLine https://github.com/Yggdroot/indentLine
+vim-obsession https://github.com/tpope/vim-obsession
 """.strip()
 
 GITHUB_ZIP = "%s/archive/master.zip"

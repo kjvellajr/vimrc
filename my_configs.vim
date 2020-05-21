@@ -71,7 +71,3 @@ nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
 
-" set curser to bar when in insert mode, back to block when not
-:autocmd InsertEnter * silent !echo -ne "\e[5 q"
-:autocmd InsertLeave * silent !echo -ne "\e[1 q"
-

@@ -63,3 +63,15 @@ set nocompatible
 set hidden
 set encoding=utf-8
 
+" vim-tmux-navigator settings
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
+
+" set curser to bar when in insert mode, back to block when not
+:autocmd InsertEnter * silent !echo -ne "\e[5 q"
+:autocmd InsertLeave * silent !echo -ne "\e[1 q"
+

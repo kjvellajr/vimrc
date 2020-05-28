@@ -63,6 +63,10 @@ set nocompatible
 set hidden
 set encoding=utf-8
 
+" do not copy deleted contents
+nnoremap d "_d
+vnoremap d "_d
+
 " vim-tmux-navigator settings
 let g:tmux_navigator_no_mappings = 1
 nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>

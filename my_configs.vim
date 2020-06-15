@@ -3,13 +3,13 @@ let NERDTreeShowHidden=1
 
 " show relative line numbers
 set number relativenumber
-augroup numbertoggle
-  autocmd!
+"augroup numbertoggle
+  "autocmd!
   "autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   "autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-  autocmd BufEnter,FocusGained,InsertLeave * if (bufname("%") =~ "NERD_tree_") | set relativenumber | endif
-  autocmd BufLeave,FocusLost,InsertEnter * if (bufname("%") =~ "NERD_tree_") | set norelativenumber | endif
-augroup END
+  "autocmd BufEnter,FocusGained,InsertLeave * if (bufname("%")[0:8] != "NERD_tree") | set relativenumber | endif
+  "autocmd BufLeave,FocusLost,InsertEnter * if (bufname("%")[0:8] != "NERD_tree") | set norelativenumber | endif
+"augroup END
 
 " quit if nerdtree is last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

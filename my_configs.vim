@@ -77,6 +77,12 @@ set encoding=utf-8
 nnoremap d "_d
 vnoremap d "_d
 
+" ctrlp overrides
+" Quickly find and open a file in the current working directory
+map <leader>f :CtrlP<cr>
+" Quickly find and open a recently opened file
+map <leader>m :CtrlPMRU<CR>
+
 " vim-tmux-navigator settings
 let g:tmux_navigator_no_mappings = 1
 nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>

@@ -1,6 +1,9 @@
 " show hidden files in nerdtree by default
 let NERDTreeShowHidden=1
 
+" set nerdtree position to left
+let NERDTreeWinPos="left"
+
 " show relative line numbers
 set number relativenumber
 "augroup numbertoggle

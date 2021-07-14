@@ -2,7 +2,7 @@
 let NERDTreeShowHidden=1
 
 " set nerdtree position to left
-let NERDTreeWinPos="left"
+" let NERDTreeWinPos="left"
 
 " show relative line numbers
 set number relativenumber
